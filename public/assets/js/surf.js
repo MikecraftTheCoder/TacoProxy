@@ -28,7 +28,7 @@ $('alloydefault').onclick = function() {
     var det = document.domain;
     var domain = det.replace('www.', '').split(/[/?#]/)[0];
     const origin = btoa(url)
-    window.location.href = "https://" + domain + "/prefix/" + origin;
+    window.location.href = window.location.href + "/prefix/" + origin;
     return false;
 };
 
